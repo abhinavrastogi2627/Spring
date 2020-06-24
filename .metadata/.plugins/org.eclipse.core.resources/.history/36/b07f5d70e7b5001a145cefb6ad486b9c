@@ -1,0 +1,43 @@
+package io.abhinav.springbootstarter.topic.course;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class CourseService {
+	
+	@Autowired
+	private CourseRepository courseRepository;
+	
+	
+	public List<Course> getAllcourses(){
+//		return topics;
+		List<Course> course =new ArrayList<>();
+		courseRepository.findAll().forEach(course ::add);
+		return course;
+	}
+	
+	public Course getcourse(String id) {
+		return courseRepository.findById(id).get();
+	}
+	
+	public void addcourse(Course course) {
+		courseRepository.save(course);
+	}
+
+	public void updatecourse(Course course) {
+		courseRepository.save(course);
+		
+	}
+
+	public void deletecourse(String id) {
+//		topics.removeIf(t -> t.idString.equals(id));
+		courseRepository.deleteById(id);
+		
+	}
+}

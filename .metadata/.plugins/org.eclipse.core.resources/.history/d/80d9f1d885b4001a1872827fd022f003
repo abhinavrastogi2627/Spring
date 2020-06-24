@@ -1,0 +1,21 @@
+package io.abhinav.springbootstarter.topic;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TopicController {
+	@RequestMapping("/topics")
+	public List<Topic> getalltopics() {
+		return Arrays.asList(
+				new Topic("java", "java boot", "very best tutorial"),
+				new Topic("spring", "Spring boot", "very good tutorial"),
+				new Topic("c++", "c++ boot", "very  tutorial"),
+				new Topic("python", "python boot", " good tutorial")
+				);
+	}
+
+}

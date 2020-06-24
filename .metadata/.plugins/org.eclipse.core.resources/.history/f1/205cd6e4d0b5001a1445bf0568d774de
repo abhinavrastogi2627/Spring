@@ -1,0 +1,13 @@
+package io.abhinav;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CoutseApiDataApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Courseapidata.class, args);
+	}
+
+}

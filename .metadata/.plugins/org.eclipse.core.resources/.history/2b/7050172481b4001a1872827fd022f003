@@ -1,0 +1,5 @@
+package io.abhinav.springbootstarter.hello;
+
+public class HelloController {
+
+}

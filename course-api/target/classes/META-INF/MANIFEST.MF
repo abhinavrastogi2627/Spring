@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Abhinav_Rastogi
+Build-Jdk: 14.0.1
+Implementation-Title: abhinav course api
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: io.abhinav.springstarter
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/course-api/
+Created-By: Maven Integration for Eclipse
+
