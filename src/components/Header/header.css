@@ -1,0 +1,23 @@
+
+.header {
+    background-color: cyan;
+    height : 70px;
+    width : 100%;
+    display : flex;
+
+}
+
+.header.option {
+    color : white;
+    text-decoration:  none;
+    padding : 20px 15px;
+    margin-left: 5px;
+
+}
+
+.header.option:hover {
+    background-color: grey;
+
+
+
+}

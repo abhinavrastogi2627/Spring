@@ -1,0 +1,18 @@
+.header{
+    background-color: lightblue;
+    height:60px ;
+    width: 100%;
+    display: flex;
+
+    
+}
+.header.option {
+    color : grey;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin-left: 5px;
+}
+
+.header.option:hover{
+    background-color: blue;
+}
